@@ -12,12 +12,12 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-danger fixed-top">
         <div class="container">
-          <a class="navbar-brand fs-3 text-light" href="#">Manchester United</a>
+          <a class="navbar-brand fs-3 text-light  navtite" href="#">Manchester United</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse " id="navbarNav">
-            <ul class="navbar-nav  ms-auto fs-4  ">
+            <ul class="navbar-nav  ms-auto fs-4  navul">
               <li class="nav-item">
                 <a class="nav-link "  href="#home">Home</a>
               </li>
@@ -35,7 +35,7 @@
         </div>
       </nav>
     <section id="home" class="home_container">
-        <div class="row d-flex">
+        <div class="row d-flex home">
             <div class="col-6">
                 <h3>Hai I'M Cristiano Ronaldo</h3>
                 <h4>I'm Machine Goals in Manchester United</h4>
@@ -228,7 +228,7 @@
                 </div>
             <div class="about_2">
             <h4>Manchester United</h4>
-            <img src="https://upload.wikimedia.org/wikipedia/id/thumb/7/7a/Manchester_United_FC_crest.svg/330px-Manchester_United_FC_crest.svg.png" alt="Logo">
+            <img src="https://upload.wikimedia.org/wikipedia/id/thumb/7/7a/Manchester_United_FC_crest.svg/330px-Manchester_United_FC_crest.svg.png" alt="Logo" class="gambar">
             <div class="tabel-2">
               <table>
                 <tr>
@@ -255,9 +255,9 @@
                   <td>Wakil ketua</td>
                   <td><a href="https://id.wikipedia.org/wiki/Joel_Glazer">Joel</a> dan <a href="https://id.wikipedia.org/wiki/Avram_Glazer">Avram Glazer</a></td>
                 </tr>
-                <tr>
+                <tr class="image">
                   <td>Manajer</td>
-                  <td ><img src="https://cdn-icons-png.flaticon.com/128/4489/4489254.png" alt="Country"><a href="https://id.wikipedia.org/wiki/Erik_ten_Hag" target="_blank" >Eric ten Hag</a></td>
+                  <td class="anak"><img src="https://cdn-icons-png.flaticon.com/128/4489/4489254.png" alt="Country" class="gmb"><a href="https://id.wikipedia.org/wiki/Erik_ten_Hag" target="_blank" >Eric ten Hag</a></td>
                 </tr>
                 <tr>
                   <td>Liga</td>
@@ -382,7 +382,48 @@
           <h3>Piala Super Europa</h3>
           <ul>
             <li><p>1991</p></li>
-          </ul>                 
+          </ul>
+          
+          </div>     
+          <div class="trophy-list">
+            <div class="row d-flex align-items-center gap-5">
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam saepe optio, fugit fuga laudantium, minus magnam deleniti cumque illo tempora tempore facilis aliquam modi quisquam dicta assumenda animi eligendi sunt. Cumque perferendis natus, consectetur accusantium, eius blanditiis quas, delectus atque cum commodi molestiae! Cupiditate quod vitae ab molestias! Impedit!</p>
+                    <div class="row">
+                        <div class="col d-flex align-items-center img">
+                            <img src="assets/Facebook.svg" alt="facebook icon">
+                            <p>Manchester United FC</p>
+                        </div>
+                        <div class="col d-flex align-items-center img">
+                            <img src="assets/Instagram.svg" alt="instagram icon">
+                            <p>@Manchester United</p>
+                        </div>
+                        <div class="col d-flex align-items-center img">
+                            <img src="assets/Twitter.svg" alt="twitter icon">
+                            <p>@Manchester_United</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <form class="contact-form" onsubmit="onFormSubmit(event)">
+                        <div class="mb-3">
+                          <label for="inp_email" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="inp_email" placeholder="example@email.com">
+                        </div>
+                        <div class="mb-3">
+                          <label for="inp_subject" class="form-label">Subject</label>
+                          <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inp_message" class="form-label">Message</label>
+                            <input type="text" class="form-control" id="inp_message" placeholder="Your Message">
+                        </div>
+                        <div class="d-flex justify-content-center mt-5">
+                            <button type="submit" class="btn button">Submit</button>
+                        </div>
+                      </form>
+                </div>
+            </div>          
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
